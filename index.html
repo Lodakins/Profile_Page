@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-    <header>
+    <header id="mainHeader">
+        
+        <div class="imageContainer">
+            <img alt="my-image" src="bg.jpg" class="image"/>
+        </div>
+        <div class="detailsContainer">
 
+        </div>
     </header>
     <main>
+        <div id="aboutContainer">
+            <h4> ABOUT ME</h4>
+            <p>
+    
+            </p>
+        </div>
+        <div id="formContainer">
+            <form method="POST" action="#">
+                <p>
+                    <label for="subject"> Subject</label><br/>
+                    <input type="text" name="subject" id="subject"/>
+                </p>
+                <p>
+                    <label for="email"> Email</label><br/>
+                    <input type="text" name="email" id="email"/>
+                </p>
+                <p>
+                    <label for="message"> Message</label><br/>
+                    <textarea id="message">
 
+                    </textarea>
+                </p>
+                <p>
+                    <button> Submit</button>
+                </p>
+            </form>
+        </div>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
