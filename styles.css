@@ -1,20 +1,202 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ul li{
+    list-style: none;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* == end of css reset =====*/
 html,body{
-    padding: 0px;
-    margin: 0px;
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #mainHeader{
     min-height: 500px;
-    background: url("./bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#headerMenu{
+    padding: 10px;
+}
+#headerMenu ul{
+    text-align: right;
+    padding-right: 300px;
+}
+#headerMenu ul li{
+    display: inline-block;
+    padding: 4px 19px;
+}
+#headerMenu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#majorContainer{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#majorContainer div{
+   flex:1;
+   -webkit-flex:1;
+   -moz-flex:1;
 }
 .image{
     width: 300px;
     height: 300px;
     border-radius: 30px;
+    margin-left: 240px;
 }
+#detailsContainer{
+    padding-top: 40px;
+}
+#detailsContainer h2{
+    color:#fff;
+}
+#detailsContainer li a{
+    color: #fff;
+    font-size: 16px;  
+    text-decoration: none;
+}
+.fa{
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#bioData{
+    padding: 20px;
+}
+#bioData ul li{
+    font-size: 20px;
+    padding: 5px 4px;
+
+}
+#mainContent h3{
+    text-align: center;
+    font-size: 29px;
+    color: #666;
+}
+#aboutContainer p{
+    text-align: center;
+    padding: 15px 200px;
+}
+#formContainer{
+    background-color: #eee;
+    padding: 70px 10px;
+}
+
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+ }
+
+@media (max-width: 575.98px) { 
+    #headerMenu ul{
+        text-align: right;
+        padding-right:50px;
+    }
+    #majorContainer{
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-flow: column wrap;
+     flex-flow: column wrap;
+    }
+    #majorContainer #detailsContainer{
+        margin-top: 40px;
+    }
+    .image{
+        margin: 0 auto;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }

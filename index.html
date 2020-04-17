@@ -4,26 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
     <header id="mainHeader">
-        
-        <div class="imageContainer">
-            <img alt="my-image" src="bg.jpg" class="image"/>
+        <div id="headerMenu">
+            <ul>
+                <li><a href="#aboutContainer">About Me </a></li>
+                <li><a href="#formContainer"> Contact </a></li>
+            </ul>
         </div>
-        <div class="detailsContainer">
-
+    <div id="majorContainer">
+        <div id="imageContainer">
+            <img alt="my-image" src="img.jpg" class="image"/>
         </div>
+        <div id="detailsContainer">
+            <h2> SOFTWARE DEVELOPER</h2>
+            <p> You can follow me through your social handles</p>
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a> </li>
+                <li><a href="#"><i class="fa fa-github"></i>Github</a></li>
+            </ul>
+        </div>
+    </div>
     </header>
-    <main>
-        <div id="aboutContainer">
-            <h4> ABOUT ME</h4>
+    <main id="mainContent">
+        <div id="bioData">
+            <h3> BIO DATA</h3>
+            <ul>
+                <li> Name: <span> Akinrolabu Lolade</span></li>
+                <li> State of Origin:<span>Ondo State </span> </li>
+                <li> Date of Birth: <span> 20th February, 1995</span>  </li>
+                <li> Address:  <span> 13, Fola Falusi Street, Victory Estate, Ilo-Ajegunle</span></li>
+                <li> Occupation: <span> Software Developer</span></li>
+                <li> Home Town: <span> Ile-Oluji / Okeigbo</span></li>
+                <li> Slack ID: <span> lodakins</span> </li>
+            </ul>
+        </div>
+        <div id="aboutContainer" >
+            <h3> ABOUT ME</h3>
             <p>
-    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel blanditiis consequuntur accusantium aperiam labore, eaque amet sed non id. Neque aspernatur maxime itaque quaerat voluptatum praesentium soluta debitis sit?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quis voluptas expedita illum labore neque, nemo amet ea ratione possimus blanditiis aliquam recusandae maiores, quod fugit, magnam accusamus officia quos!
             </p>
         </div>
         <div id="formContainer">
+            <h3> YOU CAN REACH OUT</h3>
             <form method="POST" action="#">
                 <p>
                     <label for="subject"> Subject</label><br/>
@@ -40,7 +68,7 @@
                     </textarea>
                 </p>
                 <p>
-                    <button> Submit</button>
+                    <button id="subbtn"> Submit</button>
                 </p>
             </form>
         </div>
