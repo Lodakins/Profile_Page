@@ -150,12 +150,16 @@ h1,h2,h3,h4,h5,h6{
 #bioData ul li{
     font-size: 20px;
     padding: 5px 4px;
-
 }
+
 #mainContent h3{
     text-align: center;
     font-size: 29px;
     color: #666;
+}
+#aboutContainer{
+    padding-top:70px;
+    padding-bottom:90px;
 }
 #aboutContainer p{
     text-align: center;
@@ -165,10 +169,39 @@ h1,h2,h3,h4,h5,h6{
     background-color: #eee;
     padding: 70px 10px;
 }
+#form{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 80px;
+}
+#form p{
+    margin-top: 10px;
+}
+#form label{
+    font-size: 18px;
+}
+#form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+}
+#form textarea{
+    width: 100%;
+}
+#subbtn{
+    display: inline-block;
+    padding: 15px 50px;
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
 
 
-
-// Extra large devices (large desktops, 1200px and up)
+ /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
  }
@@ -192,11 +225,11 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
