@@ -237,7 +237,7 @@ h1,h2,h3,h4,h5,h6{
 @media (max-width: 575.98px) { 
     #headerMenu ul{
         text-align: right;
-        padding-right:50px;
+        padding-right:50px !important;
         padding-left: 40px;
     }
     #majorContainer{
